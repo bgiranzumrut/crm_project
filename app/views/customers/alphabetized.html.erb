@@ -1,0 +1,6 @@
+<h1>Alphabetized Customers</h1>
+<%= link_to "Back to All Customers", root_path %>
+
+<% @customers.each do |customer| %>
+<%= render partial: "customer", locals: { customer: customer } %>
+<% end %>
